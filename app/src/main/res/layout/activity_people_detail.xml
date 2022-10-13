@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PeopleDetailActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAvtar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin_8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvFirstName"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFirstName"
+        style="@style/TextLabelStyle"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingTop="@dimen/margin_24"
+        android:paddingRight="@dimen/margin_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAvtar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLastName"
+        style="@style/TextLabelStyle"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintBottom_toTopOf="@+id/tvEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmail"
+        style="@style/TextLabelStyle"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintBottom_toTopOf="@+id/tvJobTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvJobTitle"
+        style="@style/TextLabelStyle"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintBottom_toTopOf="@+id/tvFavouriteColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFavouriteColor"
+        style="@style/TextLabelStyle"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvJobTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
